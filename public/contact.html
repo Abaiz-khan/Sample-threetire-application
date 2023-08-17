@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TASK / lp</title>
+    <link rel="stylesheet" href="contact.css">
+    <script src="https://kit.fontawesome.com/6324facbc5.js" crossorigin="anonymous"></script>
+    <!-- <script type="module" src="logic.js"></script> -->
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <img class="logo" src="./assets/LOGO.png" alt="LOGO">
+            <ul>
+                <li><a href="./contac.html" style="color: rgb(51, 51, 145);">  TRAVEL WITH US </a></li>
+            </ul>
+        </nav>
+    </header>
+    <hr>
+    <main>
+    <section class="sec1">
+        <div class="left">
+            <span class="lady"><img src="./Contact us/sec 1/Beverly 1.png" alt=""></span>
+            <h1>About us</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Lorem, ipsum dolor.
+            </p> <br> <br> <br>
+         </div>
+         <div class="right">
+             <img src="./Contact us/sec 1/unnamed (1) 1.png" alt="">
+             <img class="point" src="./Contact us/sec 1/Ellipse 4.png" alt="">
+         </div>
+    </section>
+    <section class="sec2">
+        <div class="font">
+            <p>Follow us</p>
+            <ul style="display: flex;" >
+                <li class="fa fa-facebook" aria-hidden="true" ></li> <br>
+                <li class="fa fa-instagram" aria-hidden="true" style="margin-left: 10px;"
+                ></li> <br>
+                <li class="fa fa-twitter" aria-hidden="true"
+                style="margin-left: 10px;"></li> <br>
+            </ul>
+        </div>
+        <div class="num"><p><span><img src="./Contact us/sec 2/Vector-1.png" alt=""></span>+91 9267454888</p> </div>
+        <div class="location"><p> <span><img src="./Contact us/sec 2/Vector.png" alt=""></span> Lorem ipsum dolor, <br> sit amet consectetur adipisicing.</p></div>
+    </section>  
+    <section class="sec3">
+        <div class="top"><h1>Details Please</h1>
+        <p>Lorem ipsum dolor sit amet</p></div>
+        <div class="form">
+                <!-- <div class="one">
+                    <div class="fname">
+                        <h3>First name</h3><br> <input type="text" placeholder="name" >
+                    </div>
+                    <div class="lname"><h3>Last name</h3> <br> <input type="text" placeholder="name"></div>
+                </div>
+                <div class="two"><h3>Email Adderss</h3> <br> <input type="email" placeholder="enter emai"></div>
+                <div class="three"><h3>Message</h3> <br> <input type="text" style="font-size: 3pc;"></div> -->
+                <form action="/createCV" method="POST" enctype="multipart/form-data">
+                  <div class="one">
+                    <div class="fname">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required></div>
+                     <div class="lname">
+                    <label for="cnic">CNIC Number:</label>
+                    <input type="text" id="cnic" name="cnic" required></div>
+                </div>
+                <div class="two">  
+                <div class="image-upload">
+                        <label id="choose-image" for="picture">Choose Passport Image</label>
+                        <input type="file" id="picture" name="picture" accept="image/*" required>
+                        <!-- <img id="preview" src="#" alt="Preview" /></div>  -->
+                    </div>
+                    
+                 <div class="three">
+                    <label for="previous">Previous Travells:</label>
+                    <textarea id="previous" name="previous" required></textarea>
+            
+                    <label for="experience">Passport-no:</label>
+                    <textarea id="experience" name="experience" required></textarea></div>
+                    <input type="submit" value="SUBMIT">
+            </form>
+        </div>
+    </section>
+    <script>
+        const pictureInput = document.getElementById('picture');
+        const previewImg = document.getElementById('preview');
+        const chooseImageBtn = document.getElementById('choose-image');
+
+        chooseImageBtn.addEventListener('click', function() {
+            pictureInput.click();
+        });
+
+        pictureInput.addEventListener('change', function(event) {
+            const file = event.target.files[0];
+            const reader = new FileReader();
+
+            reader.onload = function(event) {
+                previewImg.src = event.target.result;
+            };
+
+            reader.readAsDataURL(file);
+        });
+    </script>
+    <div class="footer">
+        <div class="f">
+            <h3>logo</h3>
+            <p>Lorem ipsum dolor sit amet consectetur. <br>Lorem ipsum dolor sit. <br> @lorem </p>
+        </div>
+        <div class="contacts">
+            <h3>Contacts</h3>
+            <ul>
+                <li>lorem</li>
+                <li>lorem</li>
+                <li>lorem</li>
+                <li>lorem</li>
+            </ul>
+        </div>
+        <div class="about">
+            <h3>About us</h3>
+            <ul>
+                <li>loram</li>
+                <li>loram</li>
+                <li>loram</li>
+                <li>loram</li>
+            </ul>
+        </div>
+        <div class="font2">
+            <ul>
+                <li class="fa fa-facebook" aria-hidden="true"></li> <br>
+                <li class="fa fa-instagram" aria-hidden="true"></li> <br>
+                <li class="fa fa-twitter" aria-hidden="true"></li> <br>
+            </ul>
+        </div></div></main>
+        <footer>
+        <div class="copy">
+            <p> Copy rights Lorem ipsum dolor sit.</p>
+        </div></footer>
+
+</body>
+
+</html>

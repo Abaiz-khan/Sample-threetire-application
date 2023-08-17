@@ -1,0 +1,123 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    /*border: 1px solid;*/
+}
+
+.navbar ul {
+    display: flex;
+    list-style-type: none;
+}
+
+.navbar ul a {
+    font-weight: bolder;
+    text-decoration: none;
+    padding: 14px;
+    color: black
+}
+
+.navbar ul a:hover {
+    font-weight: bolder;
+    text-decoration: none;
+    padding: 14px;
+    color: #f88d00c9;
+}
+.logo {
+    width: 138px;
+    height: 39px;
+}
+.left{
+    width: 40%;
+   /* border: 1px dotted;*/
+    height: 21pc;
+    text-align: center;
+    font-size: 24px;
+}
+.lady{
+    margin-right: 26pc;
+}
+.sec1{
+    display: flex;
+    justify-content: space-around;
+}
+.right{
+    position: relative;
+}
+.point{
+    width: 20px;
+    position: absolute;
+    top: 20pc;
+    right: 17pc;
+    background-color: rgb(214, 48, 48);
+    border-radius: 100%;
+}
+.sec2{
+    display: flex;
+}
+.font{
+    width: 33%;
+    border-left: 1px dotted;
+    text-align: center;
+}
+.num{
+    width: 33%;
+    border-left: 1px dotted;
+    text-align: center;
+}
+.location{
+    width: 33%;
+    border-left: 1px dotted;
+    text-align: center;
+}
+.sec3{
+   /*border: 1px dotted;*/
+    width: 100%;
+    height: 31pc;
+    margin-top: 4pc;
+    background-color: #E8F4FA;;
+    text-align: center;
+    border-radius: 53px;
+}
+.one{
+    display: flex;
+    justify-content: space-around;
+    margin-left: -7pc;
+}
+.form{
+    width: 50%;
+    margin-left: 26pc;
+}
+.two{
+    padding-right: 34pc;
+    padding-right: 34pc;
+    padding-top: 2pc;
+}
+.three{
+    margin-right: 37pc;
+    margin-top: 29px;
+}
+.footer{
+    text-align: center;
+    /*border: 1px solid blue;*/
+    height: 13pc;
+    border-radius: 30px;
+    display: flex;
+    justify-content: space-around;
+}
+.font2{
+    margin-top: 48px;
+}
+.copy{
+    text-align: center;
+    background-color: silver;
+    height: 3pc;
+    padding-top: 1px;
+}
+.image-uplode{
+     margin-top: 64px;
+}
+
+.four{
+    margin-right: 37px;
+    margin-top: 38px;
+}
