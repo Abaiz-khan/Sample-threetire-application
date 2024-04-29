@@ -1,4 +1,4 @@
-name: Create PR
+name: Create PR o
 on:
   push:
     branches:
