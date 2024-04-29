@@ -3,6 +3,7 @@ on:
   push:
     branches:
       - testing
+    workflow_dispatch:  
 
 jobs:
   CloudList:
